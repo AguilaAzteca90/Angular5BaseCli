@@ -13,6 +13,12 @@ export class MainComponent implements OnInit {
 
   gitHubDataList: Array<GitHubModel>;
 
+  foods = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];  
+
   /**Con esto ya estamos inyectando el servicio que creamos en la carpeta services
    * que es la clase "GitHubService"
    */

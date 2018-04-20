@@ -12,7 +12,8 @@ import { MatToolbarModule,
         MatListModule,
         MatIconModule,
         MatInputModule,
-        MatProgressBarModule } from '@angular/material';
+        MatProgressBarModule,
+        MatSelectModule } from '@angular/material';
 
 import { APP_PROVIDERS } from './app.providers';
 import { MainComponent } from './main/main.component';
@@ -24,6 +25,7 @@ import { PasivoComponent } from './pasivo/pasivo.component';
 import { ReactivoComponent } from './reactivo/reactivo.component';
 import { ContentLoginComponent } from "./content-login/content-login.component";
 import { LoginComponent } from "./login/login.component";
+//import {MatSelectModule} from '@angular/material/select';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -54,6 +56,7 @@ export const MATERIAL_COMPONENTS = [
     HttpClientModule,
     BrowserAnimationsModule,
     MATERIAL_COMPONENTS,
+    MatSelectModule,
     FormsModule,
     RouterModule.forRoot(routes)
   ],
