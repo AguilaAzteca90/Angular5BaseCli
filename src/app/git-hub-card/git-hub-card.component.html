@@ -1,0 +1,11 @@
+<div class="horizontal-container card">
+    <img width="75px" height="74px" [src]="gitHubData.avatar_url"  />
+    <div class="data-container">
+        <div>Nombre: {{gitHubData.name}}</div>
+        <div>UserName: {{gitHubData.login}}</div>
+        <div class="horizontal-container container-space">
+            <div>Followers: {{gitHubData.followers}}</div>
+            <div>Following: {{gitHubData.following}}</div>
+        </div>
+    </div>
+</div>

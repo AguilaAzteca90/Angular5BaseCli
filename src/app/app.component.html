@@ -7,6 +7,7 @@
               <span><a [routerLink]="['']" class="toolbar-item">Inicio</a></span>
               <span><a [routerLink]="['about']" class="toolbar-item">Nosotros</a></span>
               <span><a [routerLink]="['contact']" class="toolbar-item">Contacto</a></span>
+              <span><a [routerLink]="['login']" class="toolbar-item">Login</a></span>
           </div>
       </div>
   </mat-toolbar>
@@ -21,5 +22,7 @@
       </mat-list>
   </mat-sidenav>
   <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+  
   <router-outlet></router-outlet>
+  
 </mat-sidenav-container>
